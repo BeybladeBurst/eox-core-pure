@@ -51,6 +51,7 @@ from openedx_events.learning.signals import STUDENT_REGISTRATION_COMPLETED  # py
 from rest_framework import status
 from rest_framework.exceptions import NotFound
 from social_django.models import UserSocialAuth  # pylint: disable=import-error
+from django.utils.translation import gettext as _
 
 EMAIL_EXISTS_MSG_FMT = _("An account with the Email '{email}' already exists.")
 USERNAME_EXISTS_MSG_FMT = _("An account with the Public Username '{username}' already exists.")
